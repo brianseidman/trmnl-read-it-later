@@ -1,3 +1,5 @@
+# Read It Later for TRMNL
+
 This shortcut sends an article to your TRMNL with a convenient QR code so you can read it later.
 
 Found an article, but don’t have time to read it? Let your TRMNL hold on to it for you!
@@ -41,10 +43,23 @@ For alternatives, see [Integrations and Modifications](#integrations-and-modific
 Run the shortcut and enter a URL when prompted, or browse to a webpage and share to the shortcut from the Share Sheet. For best results, choose an article rather than a website's or publication’s homepage.
 
 ## Integrations and modifications
-At its simplest, the Read It Later plugin is a [webhook-based TRMNL plugin][7] that uses the following keys: `title`, `description` (summary), `url`, and `source` (the website domain). It is therefore possible to provide this data in other ways, as long as it is ultimately combined into a Dictionary or JSON object and sent to TRMNL nested in a `merge_variables` object.
+At its simplest, the Read It Later plugin is a [webhook-based TRMNL plugin][6] that uses the following keys: `title`, `description` (summary), `url`, and `source` (the website domain). It is therefore possible to provide this data in other ways, as long as it is ultimately combined into a Dictionary or JSON object and sent to TRMNL nested in a `merge_variables/data` object.
+
+```
+{
+  "merge_variables": {
+    "data": {
+      "title": "Article title",
+      "description": "Article summary",
+      "url": "Full article URL",
+      "source": "Article domain"
+    }
+  }
+}
+```
 
 ### Other read it later services
-For instance, the Instapaper “Random Article” Shortcuts action provided by the [Instapaper iOS app][8] retrieves a random article from your Instapaper queue in Article-like format that contains a URL attribute. With some modification, the URL can be provided to the shortcut and, following the same logic, send a random article from your Instapaper account to your TRMNL. Other “read it later” services can be integrated similarly.
+For instance, the Instapaper “Random Article” Shortcuts action provided by the [Instapaper iOS app][7] retrieves a random article from your Instapaper queue in Article-like format that contains a URL attribute. With some modification, the URL can be provided to the shortcut and, following the same logic, send a random article from your Instapaper account to your TRMNL. Other “read it later” services can be integrated similarly.
 
 ### Other LLMs
 Different LLM services can also be integrated with this shortcut by replacing the “Summarize” and/or “Use Model” action steps with Shortcuts actions provided by other LLM apps. Due to the layout of the Read It Later plugin, it is not recommended to remove the summary-generating logic entirely, but it is possible to send the `description` value as blank and the TRMNL plugin will still function.
@@ -57,10 +72,9 @@ Again, under the hood, this Shortcuts/TRMNL Companion integration is a convenien
 [^1]: The “Summarize” action does not offer parameters for summary length. At the same time, “Use Model” can often be overwhelmed by long “Body” text and return an error. By combining “Summarize” and “Use Model” together, we get text that the model can handle and a result at the right length.
 
 [1]: https://help.trmnl.com/en/articles/12294875-trmnl-companion-for-ios
+[2]: https://www.icloud.com/shortcuts/055064f1da3441c8881802cc629e69c7
+[3]: https://support.apple.com/guide/shortcuts/welcome/ios
 [4]: https://trmnl.com
 [5]: https://support.apple.com/guide/shortcuts/input-types-apd7644168e1/9.0/ios/26
-[3]: https://support.apple.com/guide/shortcuts/welcome/ios
-
-[7]: https://docs.trmnl.com/go/private-plugins/webhooks
-
-[8]: https://www.instapaper.com/iphone
+[6]: https://docs.trmnl.com/go/private-plugins/webhooks
+[7]: https://www.instapaper.com/iphone
