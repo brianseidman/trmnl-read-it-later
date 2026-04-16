@@ -9,6 +9,8 @@ Found an article, but don’t have time to read it? Let your TRMNL hold on to it
 - [Installation and Use](#installation-and-use)
 - [Integrations and Modifications](#integrations-and-modifications)
 
+<img src="assets/read-it-later-trmnl.png" width="700">
+
 ## About this plugin
 [Shortcuts][3] is a built-in application on iOS and iPadOS (also macOS) that runs actions and automations. [TRMNL Companion][1] is an app provided by [TRMNL][4] for easily sending data to your TRMNL screen from an iOS device.
 
