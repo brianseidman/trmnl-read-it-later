@@ -1,8 +1,8 @@
 # Read It Later for TRMNL
 
-This shortcut sends an article to your TRMNL with a convenient QR code so you can read it later.
+This shortcut sends an article to your TRMNL with a convenient QR code so you can read it later. 
 
-Found an article, but don’t have time to read it? Let your TRMNL hold on to it for you!
+For use with the TRMNL [Read It Later][8] plugin. Found an article, but don’t have time to read it? Let your TRMNL hold on to it for you!
 
 - [About This Plugin](#about-this-plugin)
 - [General Requirements](#general-requirements)
@@ -33,12 +33,13 @@ The Read It Later TRMNL plugin *can* be used without Apple Intelligence, TRMNL C
 - iOS 18/iPadOS 18 or higher
 - Device with Apple Intelligence
 - [Send URL to TRMNL][2] shortcut
+- [TRMNL Read It Later plugin][8]
 - [TRMNL Companion app][1]
 
 For alternatives, see [Integrations and Modifications](#integrations-and-modifications).
 
 ## Installation and use
-- Install the TRMNL Read It Later plugin (*link to come*) in your TRMNL dashboard.
+- Install the [TRMNL Read It Later plugin][8] in your TRMNL dashboard.
 - Make sure [TRMNL Companion][1] is installed on your iOS device and logged in to your account.
 - Follow the link to [install the shortcut in the Shortcuts app][2]. The shortcut should prompt you to choose your Read It Later plugin instance.
 
@@ -80,3 +81,4 @@ Again, under the hood, this Shortcuts/TRMNL Companion integration is a convenien
 [5]: https://support.apple.com/guide/shortcuts/input-types-apd7644168e1/9.0/ios/26
 [6]: https://docs.trmnl.com/go/private-plugins/webhooks
 [7]: https://www.instapaper.com/iphone
+[8]: https://trmnl.com/recipes/266399
