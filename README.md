@@ -1,8 +1,10 @@
 # Read It Later for TRMNL
 
-This shortcut sends an article to your TRMNL with a convenient QR code so you can read it later. 
+<img src="assets/trmnl-badge-works-with-light.svg" width="150">
 
-For use with the TRMNL [Read It Later][8] plugin. Found an article, but don’t have time to read it? Let your TRMNL hold on to it for you!
+A [TRMNL plugin][8] that works with iOS Shortcuts to send an article to your TRMNL, including a convenient QR code so you can read it later. 
+
+Found an article, but don’t have time to read it? Let your TRMNL hold it for you!
 
 - [About This Plugin](#about-this-plugin)
 - [General Requirements](#general-requirements)
